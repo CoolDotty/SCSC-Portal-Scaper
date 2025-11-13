@@ -4,7 +4,7 @@ A simple AWS Lambda middleware for querying the [Santa Clara County Superior Cou
 
 ## Try it out!
 
-Send a `POST` request to `https://3ntn7l7uuhudt24bryqceq5f2y0iobzl.lambda-url.us-west-2.on.aws/api/search` and recieve some _groovy_ fixtured (placeholder) data!
+Send a `POST` request to `https://3ntn7l7uuhudt24bryqceq5f2y0iobzl.lambda-url.us-west-2.on.aws/api/search` and receive some mock (fixture) data!
 
 _!!_ Don't forget to head it with `content-type` as `application/json` _!!_
 
@@ -64,7 +64,7 @@ Get started in browser
 
 ### Run locally
 
-`nvm install` if not already on node 24 LTS
+Run `nvm install` if you don't already have Node 24 LTS installed
 
 `yarn install`
 
@@ -80,13 +80,12 @@ then
 
 ## Deploying
 
-Make sure you have a `.env` with
+Make sure your `.env` contains:
 
-`AWS_ACCESS_KEY_ID` and
+- `AWS_ACCESS_KEY_ID`
+- `AWS_SECRET_ACCESS_KEY`
 
-`AWS_SECRET_ACCESS_KEY`
-
-(Or authenticate [OSS Serverless](https://github.com/oss-serverless/serverless) however you like)
+Or authenticate with [OSS Serverless](https://github.com/oss-serverless/serverless) however you prefer.
 
 Your AWS Secrets Manager will need a **Plaintext** entry for your legally obtained `scscourt_key` if you wish to query the live portal.
 
@@ -113,32 +112,32 @@ _!!_ Don't forget to head it with `content-type` as `application/json` _!!_
 
 #### How you verified whether scraping is permitted (robots.txt, terms of use, or by contacting the site owner).
 
-[portal.scscourt.org](https://portal.scscourt.org) has no `robots.txt` or Terms of Service though we can resonably assume it is under the scope of [scscourt.org/robots.txt](https://scscourt.org/robots.txt) and [courts.ca.gov/about/terms-use](https://courts.ca.gov/about/terms-use).
+[portal.scscourt.org](https://portal.scscourt.org) has no `robots.txt` or Terms of Service, though we can reasonably assume it is covered by [scscourt.org/robots.txt](https://scscourt.org/robots.txt) and [courts.ca.gov/about/terms-use](https://courts.ca.gov/about/terms-use).
 
-The [robots.txt](https://scscourt.org/robots.txt) makes mentions of not crawling `/search`. Though the scope of `robots.txt` does not cover subdomains, this project none-the-less does not programically call `portal.scscourt.org/search`.
+The [robots.txt](https://scscourt.org/robots.txt) disallows crawling `/search`. Although robots.txt does not cover subdomains, this project nonetheless does not programmatically call `portal.scscourt.org/search`.
 
-The [terms-use](https://courts.ca.gov/about/terms-use) outlines clearly that the use of bots or datamining is expecitly forbidden. As such this project and the demo makes no requests to the site unless you have an authorized api key to do so.
+The [terms-use](https://courts.ca.gov/about/terms-use) clearly states that the use of bots or data mining is explicitly forbidden. As such, this project and the demo make no requests to the site unless you have an authorized API key.
 
-The creation of this project in itself for personal non-commercial purpose (granted, for a technical interview) should fall within fair use.
+The creation of this project itself, for personal non-commercial purposes (granted, for a technical interview), should fall within fair use.
 
 #### Your compliant approach to access limits and geo-restrictions.
 
-This project makes no effort to circumvent geo-restrictions. [scscourt.org](https://scscourt.org/) does not place any geo-restrictions on my human websurfing from my home internet as far as I can tell.
+This project makes no effort to circumvent geo-restrictions. To my knowledge, scscourt.org does not place geo-restrictions on browsing from my home internet.
 
-That being said, make sure you deploy your lambda to an AWS region that the Santa Clara County Superior Court approves of.
+Ensure you deploy your Lambda to an AWS region approved by the Santa Clara County Superior Court.
 
 #### How mock-mode (offline fixtures) and live-mode are managed.
 
-The source code uses offline fixtures unless you setup a `scscourt_key` in your AWS Secrets.
+The source code uses offline fixtures unless you set up a `scscourt_key` in your AWS Secrets.
 
 The live demo always uses offline fixtures.
 
 #### Your safeguards for proxy or networking design (without any bypass methods).
 
-To prevent excesive crawling, this project only finds detailed case data on the most recent case that has been filed.
+To prevent excessive crawling, this project only finds detailed case data for the most recently filed case.
 
-(It _should_ only find the most recent filed case *period*, but the portal returns all results at once so that's what got copy pasted into the data fixture)
+(It should only find the most recent filed case; however, the portal returns all results at once, so the fixture contains multiple cases.)
 
 #### A clear statement confirming that no security protections were circumvented.
 
-No security protections were cirucmvented in the creation of this project.
+No security protections were circumvented in the creation of this project.
