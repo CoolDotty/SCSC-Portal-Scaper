@@ -1,7 +1,11 @@
 {
+  "type": "module",
   "name": "vigilant-guacamole",
   "version": "0.1.0",
   "description": "Proxy API for portal.scscourt.org",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "serverless offline --reloadHandler",
     "start": "yarn dev",

@@ -135,6 +135,9 @@ export const search = async (event) => {
     if (!firstName || !lastName) {
       return {
         statusCode: 400,
+        headers: {
+          "Content-Type": "application/json",
+        },
         body: JSON.stringify({
           message: "firstName and lastName are required",
         }),
@@ -146,11 +149,17 @@ export const search = async (event) => {
 
     return {
       statusCode: formattedFilings.data.length > 0 ? 200 : 204,
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify(formattedFilings),
     };
   } catch (error) {
     return {
       statusCode: 500,
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         name: error.name,
         message: error.message,

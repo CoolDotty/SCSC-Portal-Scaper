@@ -6,7 +6,8 @@ useDotenv: true
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  stage: api
+  runtime: nodejs22.x
   region: us-west-2
 
 plugins:
