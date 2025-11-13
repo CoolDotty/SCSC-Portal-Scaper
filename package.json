@@ -1,0 +1,16 @@
+{
+  "name": "vigilant-guacamole",
+  "version": "0.1.0",
+  "description": "Proxy API for portal.scscourt.org",
+  "scripts": {
+    "dev": "serverless offline --reloadHandler",
+    "start": "yarn dev",
+    "sls:deploy": "serverless deploy",
+    "sls:remove": "serverless remove"
+  },
+  "devDependencies": {
+    "osls": "^3.59.1",
+    "prettier": "^3.6.2",
+    "serverless-offline": "^14.4.0"
+  }
+}

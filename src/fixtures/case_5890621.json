@@ -1,0 +1,68 @@
+{
+  "data": {
+    "caseParties": [
+      {
+        "attorneys": [],
+        "casePartyId": "17174697",
+        "type": "Defendant",
+        "firstName": "John",
+        "middleName": "Queally",
+        "lastName": "Smith",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "John Queally Smith",
+        "isDefendant": true
+      }
+    ],
+    "caseAttornies": [],
+    "caseEvents": [],
+    "caseHearings": [],
+    "caseOtherDocuments": [],
+    "caseCharges": [],
+    "caseFinancials": [],
+    "caseFinancialTransactions": [],
+    "caseArrestInfomation": [],
+    "casePartyDemographics": {
+      "race": null,
+      "sex": null,
+      "dateOfBirth": null,
+      "height": null,
+      "weight": null,
+      "hairColor": null,
+      "eyeColor": null
+    },
+    "casePartyAddress": {
+      "streetName": null,
+      "city": null,
+      "state": null,
+      "zip": null
+    },
+    "casePartyIdentification": [],
+    "caseDocuments": [],
+    "minuteOrders": [],
+    "caseFlags": [],
+    "partyInJailFlags": [],
+    "caseBonds": [],
+    "caseWarrants": [],
+    "caseCrossReferenceNumbers": [],
+    "relatedCases": [],
+    "id": "5890621",
+    "caseNumber": "25TR080266",
+    "style": "THE PEOPLE OF THE STATE OF CALIFORNIA\nvs.\nSmith, John Queally",
+    "caseCategory": 0,
+    "type": "Adult Traffic",
+    "typeId": "TR",
+    "fileDate": "11/5/2025",
+    "securityGroup": null,
+    "status": "Closed",
+    "courtLocation": "Santa Clara",
+    "caseSubType": null,
+    "nodeId": 21309,
+    "permission": 0,
+    "isSecuredAccess": false,
+    "isCriminal": true
+  },
+  "result": 0,
+  "created": "2025-11-13T04:54:26.3761716Z",
+  "message": "Case number 5890621 was found"
+}

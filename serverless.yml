@@ -1,0 +1,25 @@
+service: scscourt
+
+frameworkVersion: "3"
+
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-west-2
+
+plugins:
+  - serverless-offline
+
+functions:
+  search:
+    handler: src/scscourt.search
+    description: "Get scscourt by name"
+    events:
+      - http:
+          path: search
+          method: post
+          cors: true
+    environment:
+      scscourt_key: ${ssm:/aws/reference/secretsmanager/scscourt_key}

@@ -1,0 +1,141 @@
+{
+  "data": {
+    "caseParties": [
+      {
+        "attorneys": [],
+        "casePartyId": "17185183",
+        "type": "Plaintiff",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "Capital One, N.a.",
+        "nickName": null,
+        "businessName": null,
+        "fullName": " Capital One, N.a.",
+        "isDefendant": false
+      },
+      {
+        "attorneys": [],
+        "casePartyId": "17185184",
+        "type": "Defendant",
+        "firstName": "Jose",
+        "middleName": "A",
+        "lastName": "Garcia",
+        "nickName": null,
+        "businessName": null,
+        "fullName": "Jose A Garcia",
+        "isDefendant": true
+      }
+    ],
+    "caseAttornies": [
+      {
+        "firstName": "Joan",
+        "middleName": "S",
+        "lastName": "Wagner",
+        "representing": " Capital One, N.a.",
+        "barNumber": "109904",
+        "isLead": true
+      }
+    ],
+    "caseEvents": [
+      {
+        "eventId": "128317513",
+        "date": "11/7/2025",
+        "type": "New Filed Case",
+        "filedBy": "",
+        "comment": null,
+        "documentId": null,
+        "documents": []
+      },
+      {
+        "eventId": "128317536",
+        "date": "11/7/2025",
+        "type": "Complaint (Limited): Up to $10K",
+        "filedBy": "Capital One, N.a., ",
+        "comment": null,
+        "documentId": null,
+        "documents": [
+          {
+            "documentId": "O9xBQDeI%2Fm2Y0PUvl2xHAkae1uUge9NCm2jPk1cv4L0%3D",
+            "documentName": "Lead_Complaint_eABC_filing_package.pdf"
+          }
+        ]
+      },
+      {
+        "eventId": "128317538",
+        "date": "11/7/2025",
+        "type": "Summons: Issued/Filed",
+        "filedBy": "Capital One, N.a., ",
+        "comment": null,
+        "documentId": null,
+        "documents": [
+          {
+            "documentId": "U5NH5zU%2Bb8iY0PUvl2xHAkae1uUge9NCm2jPk1cv4L0%3D",
+            "documentName": "950116810 sum_eABC.pdf"
+          }
+        ]
+      },
+      {
+        "eventId": "128317540",
+        "date": "11/7/2025",
+        "type": "Civil Case Cover Sheet",
+        "filedBy": "Capital One, N.a., ",
+        "comment": null,
+        "documentId": null,
+        "documents": [
+          {
+            "documentId": "dePSxLq058iY0PUvl2xHAkae1uUge9NCm2jPk1cv4L0%3D",
+            "documentName": "950116810 ccs_eABC.pdf"
+          }
+        ]
+      }
+    ],
+    "caseHearings": [],
+    "caseOtherDocuments": [],
+    "caseCharges": [],
+    "caseFinancials": [],
+    "caseFinancialTransactions": [],
+    "caseArrestInfomation": [],
+    "casePartyDemographics": {
+      "race": null,
+      "sex": null,
+      "dateOfBirth": null,
+      "height": null,
+      "weight": null,
+      "hairColor": null,
+      "eyeColor": null
+    },
+    "casePartyAddress": {
+      "streetName": null,
+      "city": null,
+      "state": null,
+      "zip": null
+    },
+    "casePartyIdentification": [],
+    "caseDocuments": [],
+    "minuteOrders": [],
+    "caseFlags": [],
+    "partyInJailFlags": [],
+    "caseBonds": [],
+    "caseWarrants": [],
+    "caseCrossReferenceNumbers": [],
+    "relatedCases": [],
+    "id": "5893748",
+    "caseNumber": "25CV479555",
+    "style": "Capital One, N.a. vs Jose Garcia",
+    "caseCategory": 1,
+    "type": "Collections Rule 3.740 Limited (09) - under 10,000",
+    "typeId": "3.740-1A",
+    "fileDate": "11/7/2025",
+    "securityGroup": null,
+    "status": "Active",
+    "courtLocation": "Civil",
+    "caseSubType": null,
+    "nodeId": 11110,
+    "permission": 0,
+    "isSecuredAccess": false,
+    "isCriminal": false
+  },
+  "result": 0,
+  "created": "2025-11-13T04:59:06.2842615Z",
+  "message": "Case number 5893748 was found"
+}

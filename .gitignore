@@ -1,3 +1,7 @@
+# Serverless directories
+.serverless
+dist
+
 # Logs
 logs
 *.log
@@ -81,6 +85,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+.output
 
 # Gatsby files
 .cache/
@@ -134,6 +139,7 @@ dist
 !.yarn/sdks
 !.yarn/versions
 
-# Vite logs files
+# Vite files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+.vite/
