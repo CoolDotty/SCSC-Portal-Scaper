@@ -1,4 +1,4 @@
-# vigilant-guacamole
+# SCSC-Portal-Scaper
 
 A simple AWS Lambda middleware for querying the [Santa Clara County Superior Court public portal](https://portal.scscourt.org/search).
 
