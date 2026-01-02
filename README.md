@@ -4,10 +4,6 @@ A simple AWS Lambda middleware for querying the [Santa Clara County Superior Cou
 
 ## Try it out!
 
-Send a `POST` request to `https://3ntn7l7uuhudt24bryqceq5f2y0iobzl.lambda-url.us-west-2.on.aws/api/search` and receive some mock (fixture) data!
-
-_!!_ Don't forget to head it with `content-type` as `application/json` _!!_
-
 Example Request:
 
 ```bash
